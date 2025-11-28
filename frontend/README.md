@@ -2,6 +2,7 @@
 
 InboxAI a Flutter Applicatioin Powered by Gemini.
 
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
