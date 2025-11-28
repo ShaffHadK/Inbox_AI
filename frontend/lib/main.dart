@@ -15,7 +15,10 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'constants.dart';
 
 // --- CONFIGURATION ---
-const String BACKEND_URL = "https://inbox-ai-pfke.onrender.com/api";
+const String BACKEND_URL = String.fromEnvironment(
+  'BACKEND_URL',
+  defaultValue: 'http://127.0.0.1:8000/api',
+);
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
