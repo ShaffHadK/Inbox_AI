@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+google-generativeai
+google-api-python-client
+google-auth
+firebase-admin
+pydantic
+requests
+python-dotenv
