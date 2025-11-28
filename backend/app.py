@@ -2,6 +2,7 @@ import os
 import json
 import base64
 import asyncio
+import tempfile
 import concurrent.futures
 import re
 from typing import List, Optional
