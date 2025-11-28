@@ -1,11 +1,5 @@
 # 🧠 Inbox AI: Reclaim Your Focus
 
-[![Flutter](https://img.shields.io/badge/Flutter-3.0%2B-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Gemini AI](https://img.shields.io/badge/AI-Gemini%20Flash-8E75B2?logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
-[![Firebase](https://img.shields.io/badge/Infra-Firebase-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 > **An intelligent, privacy-first email assistant that categorizes, summarizes, and drafts replies in seconds.**
 
 ---
@@ -13,7 +7,7 @@
 ## 🌐 Live Demo
 👉 **[Launch Inbox AI](https://shaffhadk.github.io/Inbox_AI/)**
 
-*(Note: The live demo requires the backend server to be running locally or hosted publicly via Ngrok/Cloud Run due to Gmail API security policies.)*
+*(Note: The live demo requires the backend server to be hosted publicly via Render which may take a minute to startup.)*
 
 ---
 
