@@ -1,6 +1,6 @@
 # ai_email_summarizer
 
-A new Flutter project.
+InboxAI a Flutter Applicatioin Powered by Gemini.
 
 ## Getting Started
 
