@@ -36,9 +36,9 @@ jobs:
         run: |
           flutter build web --release --dart-define=BACKEND_URL=${BACKEND_URL}
 
-      # Use the official upload-pages-artifact action (newer compatible release)
       - name: Upload build for GitHub Pages
-        uses: actions/upload-pages-artifact@v2
+        # v3 is the up-to-date version as of 2024+ and uses the non-deprecated upload-artifact v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/build/web
 
