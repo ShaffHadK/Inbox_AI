@@ -1,6 +1,5 @@
 name: Build & Deploy Flutter Web (frontend) to GitHub Pages
 
-# Trigger on pushes to main (change branch if needed)
 on:
   push:
     branches:
@@ -21,7 +20,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'   # use stable or a specific version
+          flutter-version: 'stable'
 
       - name: Enable web support
         run: flutter config --enable-web
@@ -37,10 +36,11 @@ jobs:
         run: |
           flutter build web --release --dart-define=BACKEND_URL=${BACKEND_URL}
 
-      - name: Upload build as artifact for Pages
-        uses: actions/upload-pages-artifact@v1
+      # Use the official upload-pages-artifact action (newer compatible release)
+      - name: Upload build for GitHub Pages
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: ./frontend/build/web
+          path: frontend/build/web
 
   deploy:
     needs: build
